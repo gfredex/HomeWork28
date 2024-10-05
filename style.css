@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.task1 {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.task1>button {
+    display: inline-block;
+    padding: 20px;
+    font-size: inherit;
+}
+
+.task1>p {
+    display: inline-block;
+    margin-left: 50px;
+}
