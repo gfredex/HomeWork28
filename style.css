@@ -29,3 +29,33 @@
     width: fit-content;
     margin: 5px 0;
 }
+
+.wrap-task21 {
+    width: fit-content;
+    margin: 20px;
+    padding: 30px;
+    background-color: #d8d8d8;
+}
+
+.items-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.items-block>div {
+    width: 150px;
+    height: 150px;
+}
+
+.item-block1 {
+    background-color: green;
+}
+
+.item-block2 {
+    background-color: yellow;
+}
+
+.item-block3 {
+    background-color: goldenrod;
+}

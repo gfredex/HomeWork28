@@ -34,4 +34,23 @@ btnList.addEventListener('click', () => {
         list[i].classList.toggle('activ-list-item');
         list[i].textContent = `${i + 1}-й Элемент обновленного списка`
     }
-})
+});
+
+const blockTask21 = document.querySelector('.wrap-task21');
+const infoBlock = document.querySelector('.info-block');
+
+blockTask21.addEventListener('click', (e) => {
+    if (e.target.classList == 'item-block1') {
+        infoBlock.textContent = `Ты нажал на блок ${e.target.textContent}`;
+        blockTask21.style.cssText = 'background-color: green';
+    } else if (e.target.classList == 'item-block2') {
+        infoBlock.textContent = `Ты нажал на блок ${e.target.textContent}`;
+        blockTask21.style.cssText = 'background-color: yellow';
+    } else if (e.target.classList == 'item-block3') {
+        infoBlock.textContent = `Ты нажал на блок ${e.target.textContent}`;
+        blockTask21.style.cssText = 'background-color: goldenrod';
+    } else {
+        infoBlock.textContent = 'Не тот блок';
+        blockTask21.style.cssText = 'background-color: d8d8d8';
+    }
+});
