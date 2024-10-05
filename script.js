@@ -60,4 +60,26 @@ const imgTask22 = document.getElementById('img-task22');
 btnChangeImg.addEventListener('click', () => {
     imgTask22.setAttribute('src', './img/img02.jpeg');
     imgTask22.setAttribute('width', '90%')
+});
+
+const nameUs = document.querySelector('#name');
+const surname = document.querySelector('#surname');
+const btnSubmit = document.querySelector('.btn-submit');
+const btnReset = document.querySelector('.btn-reset');
+
+btnSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (nameUs.value !== '' && surname.value !== '') {
+        let tempStr = `Пользователь ${nameUs.value.trim()} ${surname.value.trim()} заполнил форму и отправил!`
+        alert(tempStr);
+    } else {
+        alert(`Что не заполнено`)
+    }
+    nameUs.value = '';
+    surname.value = '';
+});
+btnReset.addEventListener('click', (e) => {
+    e.preventDefault();
+    nameUs.value = '';
+    surname.value = '';
 })
