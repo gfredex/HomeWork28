@@ -2,18 +2,30 @@
     box-sizing: border-box;
 }
 
-.task1 {
+.task1,
+.task2 {
     margin: 20px;
     font-size: 20px;
 }
 
-.task1>button {
+.task1>button,
+.task2 button {
     display: inline-block;
     padding: 20px;
     font-size: inherit;
 }
 
-.task1>p {
+.task1>p,
+.task2 p {
     display: inline-block;
     margin-left: 50px;
+}
+
+.activ-list-item {
+    list-style: none;
+    font-size: 22px;
+    background-color: green;
+    overflow: hidden;
+    width: fit-content;
+    margin: 5px 0;
 }
