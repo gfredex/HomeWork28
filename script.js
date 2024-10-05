@@ -82,4 +82,12 @@ btnReset.addEventListener('click', (e) => {
     e.preventDefault();
     nameUs.value = '';
     surname.value = '';
-})
+});
+
+const btnChangeTxt = document.querySelector('#change');
+const texts = document.querySelectorAll('.text24');
+btnChangeTxt.addEventListener('click', () => {
+    for (let i = 0; i < texts.length; i++) {
+        texts[i].textContent = texts[i].textContent.replace(/текст/g, 'параграф');
+    }
+});
