@@ -54,3 +54,10 @@ blockTask21.addEventListener('click', (e) => {
         blockTask21.style.cssText = 'background-color: d8d8d8';
     }
 });
+
+const btnChangeImg = document.querySelector('.btn-img');
+const imgTask22 = document.getElementById('img-task22');
+btnChangeImg.addEventListener('click', () => {
+    imgTask22.setAttribute('src', './img/img02.jpeg');
+    imgTask22.setAttribute('width', '90%')
+})

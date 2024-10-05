@@ -9,7 +9,8 @@
 }
 
 .task1>button,
-.task2 button {
+.task2 button,
+.btn-img {
     display: inline-block;
     padding: 20px;
     font-size: inherit;
@@ -58,4 +59,9 @@
 
 .item-block3 {
     background-color: goldenrod;
+}
+
+#img-task22 {
+    display: block;
+    margin: 20px;
 }
